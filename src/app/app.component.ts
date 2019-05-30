@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-refresher';
+  persons: string[] = ['Alberto', 'Beto', 'Jose'];
+  onPersonCreated(name:string){
+    this.persons.push(name);
+  }
 }
